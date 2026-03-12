@@ -128,17 +128,24 @@ export const PRIVACY_BADGES = [
   },
 ];
 
-export const PRICING_FEATURES = [
+export const FREE_FEATURES = [
   "Unlimited recordings",
   "Local whisper.cpp transcription",
   "System + microphone capture",
-  "AI summaries (BYO API key)",
+  "AI summaries (BYO API key or Ollama)",
   "Speaker diarization",
   "Export to Apple Notes, Notion, Markdown",
   "Retroactive recording",
   "Smart meeting detection",
   "Global hotkeys & menu bar",
   "Multi-language support (99+)",
+];
+
+export const PRO_FEATURES = [
+  "Everything in Free, plus:",
+  "Gemini 2.0 Flash AI summaries — no API keys",
+  "iPhone app included",
+  "Priority support",
 ];
 
 export const COMPETITORS = [
@@ -151,7 +158,7 @@ export const FAQ_ITEMS = [
   {
     question: "Is Clio really free?",
     answer:
-      "Yes, completely. Clio is open-source under GPL-3.0. There are no subscriptions, no freemium tiers, and no hidden costs. You may need your own API keys for cloud transcription or AI summaries, but local transcription with whisper.cpp is entirely free.",
+      "The Mac app is free and open-source under GPL-3.0. You get unlimited recordings, local transcription, and AI summaries using your own API keys or Ollama. Clio Pro ($4.99/month or $30/year) adds cloud-powered AI summaries via Gemini 2.0, the iPhone app, and priority support — no API keys needed.",
   },
   {
     question: "Does my data ever leave my Mac?",
@@ -161,7 +168,7 @@ export const FAQ_ITEMS = [
   {
     question: "Which AI providers are supported?",
     answer:
-      "For transcription: local whisper.cpp (free, offline), OpenAI Whisper API, and AssemblyAI. For AI summaries: OpenAI GPT, Anthropic Claude, Google Gemini, Grok, and local models via Ollama. Bring your own API keys.",
+      "For transcription: local whisper.cpp (free, offline), OpenAI Whisper API, and AssemblyAI. For AI summaries: Clio Pro uses Gemini 2.0 Flash with no setup needed. Or bring your own API keys for OpenAI GPT, Anthropic Claude, Google Gemini, Grok, or run local models via Ollama.",
   },
   {
     question: "How does Clio record both sides of a call?",
@@ -181,7 +188,7 @@ export const FAQ_ITEMS = [
   {
     question: "When is the iPhone app coming?",
     answer:
-      "The iOS app is currently in development. It will support in-person meeting recording, speakerphone call capture, on-device transcription, and Action Button quick-start. Sign up for our newsletter to be notified at launch.",
+      "The iOS app is included with Clio Pro and is currently in development. It will support in-person meeting recording, speakerphone call capture, on-device transcription, and Action Button quick-start.",
   },
   {
     question: "Is Clio notarized by Apple?",
